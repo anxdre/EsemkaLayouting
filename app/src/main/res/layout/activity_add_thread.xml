@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ligh_brown"
+    tools:context=".AddThread">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:padding="@dimen/medium_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="Subject" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_subject"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@drawable/bg_rectangle"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="Body" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_body"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:isScrollContainer="true"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@drawable/bg_rectangle" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_margin"
+            android:backgroundTint="@color/dark_brown"
+            android:text="Add Thread" />
+    </LinearLayout>
+
+
+</RelativeLayout>
